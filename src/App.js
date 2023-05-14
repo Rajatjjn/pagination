@@ -16,8 +16,8 @@ export default function App() {
   const noOfTotalPages=Math.ceil(store.length/todoperpage)
   const pages=[...Array(noOfTotalPages+1).keys()].slice(1);
 
-  const indexoflasttodo=currentpage*todoperpage
-  const indexoffirsttodo=indexoflasttodo-todoperpage
+  const indexoflasttodo=currentpage*todoperpage  //110
+  const indexoffirsttodo=indexoflasttodo-todoperpage //100
   const visible=store.slice(indexoffirsttodo,indexoflasttodo)
   
   console.log(pages)
@@ -43,7 +43,7 @@ export default function App() {
        </div>
      {visible.map((task)=>(
        <>
-       <div key={task.id}>
+       <div key={task.id} className="task">
          <p>{task.id}</p>
          <p>{task.title}</p>
        </div>

@@ -7,3 +7,7 @@ p {
   color:green;
   font-size: 20px;
 }
+.task{
+  border: 2px solid red;
+  margin: 2px;
+}
