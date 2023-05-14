@@ -1,5 +1,6 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import ParentComponent from "./component/Parent.js"
 
 import App from './App';
 
@@ -8,6 +9,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <App />
+    {/* <App /> */}
+    <ParentComponent/>
   </StrictMode>
 );
